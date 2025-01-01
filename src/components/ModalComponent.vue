@@ -61,6 +61,7 @@ export default {
   background: white;
   min-height: 200px;
   max-height: 90%;
+  border-radius: .8rem;
 }
 
 .modal__close-button {
