@@ -63,7 +63,7 @@ Como o teste não contava com um layout definido, criei um breve rascunho da est
 
 - Em seguida preparei toda a lógica de gerenciamento dos estados globais para as principais funcionalidades no Vuex
 
-- Com a lógica funcionando parti para a estilização dos componentes e demais ajustes.
+- Com a lógica funcionando, parti para a estilização dos componentes e demais ajustes.
 
 ## Conclusão
 
