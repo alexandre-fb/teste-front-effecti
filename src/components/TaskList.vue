@@ -1,5 +1,5 @@
 <template>
-  <div class="component-container" ref="componentContainer">
+  <div class="component-container">
     <div class="filters-area">
       <FiltersComponent />
     </div>
@@ -83,7 +83,6 @@ export default {
   },
   watch: {
     filteredTasks(newVal) {
-      console.log("newVal", newVal);
       this.resetPagination();
     },
   },
@@ -126,7 +125,6 @@ export default {
       }));
 
       this.setTasks(fakeTasks);
-      console.log("this.filteredTasks", this.filteredTasks);
     },
     resetTasks() {
       this.setTasks([]);
@@ -143,8 +141,6 @@ export default {
       this.visibleTasks = this.filteredTasks.slice(0, this.itemsPerPage);
     },
     loadMoreTasks() {
-      console.log("(this.visibleTasks.length", this.visibleTasks.length);
-      console.log("(this.filteredTasks.length", this.filteredTasks.length);
       if (this.visibleTasks.length < this.filteredTasks.length) {
         const start = this.currentPage * this.itemsPerPage;
         const end = start + this.itemsPerPage;

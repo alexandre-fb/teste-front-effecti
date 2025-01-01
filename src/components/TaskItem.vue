@@ -9,7 +9,6 @@
     <div class="task__content">
       <h3 class="task__content__title">{{ taskData.title }}</h3>
       <h4 class="task__content__description">{{ taskData.description }}</h4>
-      <!-- <h4 class="content__priority">{{ getPriorityData(taskData.priority) }}</h4> -->
     </div>
 
     <div class="task__actions">

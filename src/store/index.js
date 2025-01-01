@@ -36,8 +36,6 @@ export default new Vuex.Store({
             task.description.toLowerCase().includes(query)
         );
       }
-      console.log('============>tasks', tasks)
-      console.log('filters.priority', filters.priority)
       if (filters.priority !== "none") {
         tasks = tasks.slice().sort((a, b) => {
           const priorityA = Number(a.priority);
@@ -57,7 +55,6 @@ export default new Vuex.Store({
           return 0;
         });
       }
-      console.log('tasks ====>', tasks)
 
       return tasks;
     },
@@ -120,9 +117,6 @@ export default new Vuex.Store({
     },
     updateTasksToLocalStorage({ state }) {
       localStorage.setItem("tasks", JSON.stringify(state.taskList));
-    },
-    filterTasksByStatus({ state }, status) {
-      return state.taskList.filter((task) => task.done === status);
     },
   },
   modules: {},

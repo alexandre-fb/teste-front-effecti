@@ -1,6 +1,5 @@
 <template>
   <div class="app-container">
-    <!-- <HeaderComponent /> -->
     <header>
       <h1>Lista de tarefas</h1>
     </header>
@@ -82,7 +81,7 @@ main {
 footer {
   background-color: #333;
   color: white;
-  padding: 1rem 0;
+  padding: .3rem 0;
   text-align: center;
   font-size: 0.8rem;
 }
